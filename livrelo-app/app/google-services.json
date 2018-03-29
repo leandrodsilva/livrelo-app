@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "770662210715",
+    "firebase_url": "https://livreloapp.firebaseio.com",
+    "project_id": "livreloapp",
+    "storage_bucket": "livreloapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:770662210715:android:22af20f0c0b8e1bf",
+        "android_client_info": {
+          "package_name": "br.com.cursoandroid.firebaseapp.livreloapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "770662210715-3muki8lmd4svd9eag9hr0svfaqjacfpu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.cursoandroid.firebaseapp.livreloapp",
+            "certificate_hash": "0a047cec373d1aebbddc6df8e0633bed91647f0c"
+          }
+        },
+        {
+          "client_id": "770662210715-7kuqd8ii7a9pdjeunqh0l88burn14k68.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVvs6bqLSR9eK0vMvcbYZ4Km95c56plEo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "770662210715-7kuqd8ii7a9pdjeunqh0l88burn14k68.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

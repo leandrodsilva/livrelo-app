@@ -1,0 +1,118 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.cursoandroid.firebaseapp.livreloapp.fragment.ManualFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/cadastro_manual_descricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/cadastro_manual"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/cadastro_manual_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        tools:src="@drawable/ic_menu_camera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cadastro_manual_descricao" />
+
+    <EditText
+        android:id="@+id/cadastro_manual_titulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/fundo_caixa_scanner"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:textColor="@color/colorText"
+        app:layout_constraintBottom_toTopOf="@+id/cadastro_manual_autor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cadastro_manual_image"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="@string/cadastro_manual_titulo" />
+
+    <EditText
+        android:id="@+id/cadastro_manual_autor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/fundo_caixa_scanner"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:textColor="@color/colorText"
+        app:layout_constraintBottom_toTopOf="@+id/cadastro_manual_desc_livro"
+        app:layout_constraintEnd_toEndOf="@+id/cadastro_manual_titulo"
+        app:layout_constraintStart_toStartOf="@+id/cadastro_manual_titulo"
+        app:layout_constraintTop_toBottomOf="@+id/cadastro_manual_titulo"
+        tools:text="Autor" />
+
+    <EditText
+        android:id="@+id/cadastro_manual_desc_livro"
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/fundo_caixa_scanner"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:padding="5dp"
+        android:textColor="@color/colorText"
+        app:layout_constraintBottom_toTopOf="@+id/cadastro_manual_localizacao"
+        app:layout_constraintEnd_toEndOf="@+id/cadastro_manual_autor"
+        app:layout_constraintStart_toStartOf="@+id/cadastro_manual_autor"
+        app:layout_constraintTop_toBottomOf="@+id/cadastro_manual_autor" />
+
+    <EditText
+        android:id="@+id/cadastro_manual_localizacao"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/fundo_caixa_scanner"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:padding="5dp"
+        android:textColor="@color/colorText"
+        app:layout_constraintBottom_toTopOf="@+id/cadastro_manual_botao_livro"
+        app:layout_constraintEnd_toEndOf="@+id/cadastro_manual_desc_livro"
+        app:layout_constraintStart_toStartOf="@+id/cadastro_manual_desc_livro"
+        app:layout_constraintTop_toBottomOf="@+id/cadastro_manual_desc_livro"
+        tools:text="Localização" />
+
+    <Button
+        android:id="@+id/cadastro_manual_botao_livro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fundo_botao_cadastro_manual"
+        android:text="@string/cadastro_manual_botao"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/cadastro_manual_localizacao"
+        app:layout_constraintStart_toStartOf="@+id/cadastro_manual_localizacao"
+        app:layout_constraintTop_toBottomOf="@+id/cadastro_manual_localizacao" />
+</android.support.constraint.ConstraintLayout>
